@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LazyTabs – Free Tab Sites for Community Debating</title>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light;--bg:#f7f5fb;--fg:#2d2640;--mute:#6e6785;--card:#fcfbfe;--line:#e6defa;--acc:#7c4dc9;--accfg:#fcfbfe;--acct:#6a3fb8;--soft:#f3edfd;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 'Google Sans Flex','Google Sans',system-ui,sans-serif}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font:800 22px 'Google Sans Flex','Google Sans',system-ui,sans-serif}.logo span{color:var(--acct)}
+a{color:inherit}
+.btn{display:inline-block;background:var(--acc);color:var(--accfg);padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none}
+.btn.o{background:none;color:var(--fg);border:1px solid var(--line)}
+h1,h2,h3{font-family:'Google Sans Flex','Google Sans',system-ui,sans-serif;line-height:1.15;margin:0 0 12px}
+h1{font-size:clamp(34px,6vw,56px);font-weight:800;margin-top:48px}
+h2{font-size:30px;margin-top:0}
+.lead{font-size:19px;color:var(--mute);max-width:620px}
+section{padding:56px 0}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card.hot{border:2px solid var(--acc)}
+.price{font:800 34px 'Google Sans Flex','Google Sans',system-ui,sans-serif;margin:8px 0}
+.price small{font:500 14px Inter,sans-serif;color:var(--mute)}
+.tag{display:inline-block;background:var(--soft);color:var(--acct);font-size:12px;font-weight:600;padding:3px 10px;border-radius:99px}
+.mute{color:var(--mute)}
+.num{font:800 28px 'Google Sans Flex','Google Sans',system-ui,sans-serif;color:var(--acct)}
+.links{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 0}.links .btn{padding:8px 14px;font-size:14px}
+.alert{background:var(--soft);border-left:4px solid var(--acc);border-radius:8px;padding:16px 20px;margin-top:24px}.alert .big{font:700 17px/1.4 'Google Sans Flex',system-ui,sans-serif;margin-bottom:4px}.alert p{margin:0}
+.warn{background:var(--soft);border-left:4px solid var(--acc);padding:16px 20px;border-radius:8px;margin-top:20px}
+ul{padding-left:20px;margin:8px 0}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:14px}
+</style>
+</head>
+<body>
+<div class="w">
+<nav><div class="logo">Lazy<span>Tabs</span></div><a class="btn" href="#request">Request a site</a></nav>
+
+<header>
+<span class="tag">Built for the community</span>
+<h1>Free tab sites for any debating competition.</h1>
+<p class="lead">Fill a short form and get a fully featured Tabbycat site at your own subdomain. No feature limits, ever. Free for small tournaments, nearly free for big ones. For non-profit and intra-club events only.</p>
+<p><a class="btn" href="#request">Request a tab site</a> &nbsp; <a class="btn o" href="#pricing">See pricing</a></p>
+</header>
+
+<section>
+<h2>How it works</h2>
+<div class="grid">
+<div class="card"><div class="num">1</div><h3>Fill the form</h3><p class="mute">Tournament name, preferred subdomain, dates, timezone and an active email.</p></div>
+<div class="card"><div class="num">2</div><h3>Get your login</h3><p class="mute">Site details and admin login are sent to your email, usually within a day.</p></div>
+<div class="card"><div class="num">3</div><h3>Run your tournament</h3><p class="mute">Your site lives at <b>yourname.onrender.com</b>. Every feature is switched on.</p></div>
+</div>
+</section>
+
+<section style="padding-top:0">
+<h2>What it runs on</h2>
+<p class="lead">We want to be upfront about how this works. This is an independent community initiative, not a software provider.</p>
+<div class="grid" style="margin-top:24px">
+<div class="card"><span class="tag">Software</span><h3 style="margin-top:10px">Tabbycat</h3><p class="mute">Your tab site is a regular Tabbycat site, the free and open-source tabulation software. We are not officially affiliated with the Tabbycat team.</p></div>
+<div class="card"><span class="tag">Live site</span><h3 style="margin-top:10px">Render</h3><p class="mute">The live site is hosted on Render, so your address looks like <b>yourname.onrender.com</b>.</p></div>
+<div class="card"><span class="tag">Backup</span><h3 style="margin-top:10px">Vercel</h3><p class="mute">After your tournament, the backup site of your public pages is hosted on Vercel, so its address looks like <b>yourname.vercel.app</b>.</p></div>
+</div>
+</section>
+
+<section id="pricing" style="padding-top:0">
+<h2>Simple, subsidised pricing</h2>
+<p class="lead">Priced by total participants (speakers + adjudicators). Same features on every tier. Only capacity differs.</p>
+<div class="alert"><div class="big">⚠️ Non-profit and intra-club events only</div><p>This subsidised pricing is strictly for tournaments that <b>charge no registration fee</b>. If we find a site is being used for a tournament that charges registration fees, it may be taken down without prior notice.</p></div>
+<div class="grid" style="margin-top:24px">
+<div class="card"><span class="tag">Small</span><h3 style="margin-top:10px">Up to 50 Participants</h3><p class="mute">Speakers + Adjudicators</p><div class="price">Free</div><ul><li>All features</li></ul></div>
+<div class="card hot"><span class="tag">Medium</span><h3 style="margin-top:10px">Up to 150 Participants</h3><p class="mute">Speakers + Adjudicators</p><div class="price">₹50 <small>/ day</small></div><ul><li>All features</li></ul></div>
+<div class="card"><span class="tag">Large</span><h3 style="margin-top:10px">Up to 300 Participants</h3><p class="mute">Speakers + Adjudicators</p><div class="price">₹150 <small>/ day</small></div><ul><li>All features</li></ul></div>
+</div>
+<div class="warn"><b>Giving back:</b> payments go towards server costs, and whatever remains after that is donated to the Tabbycat organisation, the team that builds and maintains the software.</div>
+
+</section>
+
+<section style="padding-top:0">
+<h2>No feature limits</h2>
+<p class="lead">Unlike most free tiers, nothing is held back. Draws, ballots, private URLs, feedback, break rounds, public pages, email and everything else Tabbycat offers.</p>
+</section>
+
+<section style="padding-top:0">
+<h2>After your tournament</h2>
+<p class="lead">Your tournament runs fully on the live tab site for the days you've booked. Once it's over, we don't keep the live site running forever.</p>
+<div class="grid" style="margin-top:24px">
+<div class="card"><span class="tag">During your booking</span><h3 style="margin-top:10px">Live tab site</h3><ul class="mute"><li>The complete site with every feature: draws, ballots, results, feedback and more, for the days you've booked.</li><li>Your site stays up for <b>3 more weeks</b> after the tournament ends, after which it is temporarily turned off.</li><li>For any reference after that, the backup site can be used and viewed.</li></ul></div>
+<div class="card"><span class="tag">Afterwards</span><h3 style="margin-top:10px">Permanent backup site</h3><ul class="mute"><li>A copy of all your public pages (draws, results, standings, breaks, speaker tabs) that looks just like the original.</li><li>Anyone can open it, anytime, with no waiting.</li><li>To make changes, please get in touch.</li></ul></div>
+</div>
+</section>
+
+<section id="tournaments" style="padding-top:0">
+<h2>Tournaments we've run</h2>
+<p class="lead">Here are some tournaments that we ran with this initiative.</p>
+<div class="grid" style="margin-top:24px">
+<div class="card"><div class="num">1</div><h3>Christ FYDT 2026</h3><p class="links"><a class="btn o" href="https://fydt2026.onrender.com/" target="_blank" rel="noopener">Website</a> <a class="btn o" href="https://fydt2026pa.vercel.app/" target="_blank" rel="noopener">Backup</a></p></div>
+<div class="card"><div class="num">2</div><h3>SLS Novice 2026</h3><p class="links"><a class="btn o" href="https://slsnoviceintras26.onrender.com/" target="_blank" rel="noopener">Website</a> <a class="btn o" href="https://slsnoviceintras26.vercel.app/" target="_blank" rel="noopener">Backup</a></p></div>
+<div class="card"><div class="num">3</div><h3>Kalesh 2026</h3><p class="links"><a class="btn o" href="https://kalesh2026.onrender.com/" target="_blank" rel="noopener">Website</a> <a class="btn o" href="https://kaleshpd26archive.vercel.app/" target="_blank" rel="noopener">Backup</a></p></div>
+<div class="card"><div class="num">4</div><h3>NLUO Intras 2026</h3><p class="links"><a class="btn o" href="https://one0iudc.onrender.com/nluointras26/admin/" target="_blank" rel="noopener">Website</a> <a class="btn o" href="https://nluointras26archive.vercel.app/" target="_blank" rel="noopener">Backup</a></p></div>
+<div class="card"><div class="num">5</div><h3>More coming soon</h3><p class="mute">More tournaments will be added here as they happen.</p></div>
+</div>
+</section>
+
+<section style="padding-top:0">
+<h2>Terms of use</h2>
+<div class="grid">
+<div class="card"><h3>Don't abuse email</h3><p class="mute">Use the site's email only for your tournament. No spam, bulk promotions or unrelated messages.</p></div>
+<div class="card"><h3>Real identities</h3><p class="mute">To prevent misuse, do not use a false personal, organiser or tournament identity. All participants must use <b>real, identifiable names</b>.</p></div>
+<div class="card"><h3>No registration fees</h3><p class="mute">Subsidised tiers are only for tournaments that do not charge entry fees.</p></div>
+</div>
+</section>
+
+<section id="request" style="padding-top:0">
+<div class="card" style="text-align:center;padding:40px 24px">
+<h2>Ready to run your tournament?</h2>
+<p class="mute" style="max-width:520px;margin:0 auto 20px">You'll need an active email, your tournament name, a preferred subdomain, a timezone, and your dates.</p>
+<a class="btn" href="https://forms.gle/1umudCqo8PbfZAzPA">Fill the request form</a>
+<p class="mute" style="font-size:14px;margin-bottom:0">Questions? <span id="em"><noscript>chiragbp[dot]17@gmail[dot]com</noscript></span></p>
+</div>
+</section>
+
+<footer>Powered by <a href="https://tabbycat.readthedocs.io/en/stable/">Tabbycat</a>, run independently and not officially affiliated. Made for the debating community.</footer>
+</div>
+<script>
+(function(){var u=['chiragbp','17'].join('.'),d=['gmail','com'].join('.'),a=document.createElement('a');
+a.href='mailto:'+u+'@'+d;a.textContent=u+'@'+d;document.getElementById('em').appendChild(a);})();
+</script>
+</body>
+</html>
