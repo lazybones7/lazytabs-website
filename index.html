@@ -8,11 +8,13 @@
 <style>
 :root{color-scheme:light;--bg:#f7f5fb;--fg:#2d2640;--mute:#6e6785;--card:#fcfbfe;--line:#e6defa;--acc:#7c4dc9;--accfg:#fcfbfe;--acct:#6a3fb8;--soft:#f3edfd;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px);scroll-behavior:smooth}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 'Google Sans Flex','Google Sans',system-ui,sans-serif}
 .w{max-width:960px;margin:0 auto;padding:0 20px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 20px}
+.nav .btn{padding:9px 18px}
 .logo{font:800 22px 'Google Sans Flex','Google Sans',system-ui,sans-serif}.logo span{color:var(--acct)}
 a{color:inherit}
 .btn{display:inline-block;background:var(--acc);color:var(--accfg);padding:12px 22px;border-radius:10px;font-weight:600;text-decoration:none}
@@ -38,11 +40,10 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-si
 </style>
 </head>
 <body>
+<div class="top"><div class="w nav"><div class="logo">Lazy<span>Tabs</span></div><a class="btn" href="#request">Request a site</a></div></div>
 <div class="w">
-<nav><div class="logo">Lazy<span>Tabs</span></div><a class="btn" href="#request">Request a site</a></nav>
 
 <header>
-<span class="tag">Built for the community</span>
 <h1>Free tab sites for any debating competition.</h1>
 <p class="lead">Fill a short form and get a fully featured Tabbycat site at your own subdomain. No feature limits, ever. Free for small tournaments, nearly free for big ones. For non-profit and intra-club events only.</p>
 <p><a class="btn" href="#request">Request a tab site</a> &nbsp; <a class="btn o" href="#pricing">See pricing</a></p>
@@ -74,8 +75,9 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-si
 <div class="grid" style="margin-top:24px">
 <div class="card"><span class="tag">Small</span><h3 style="margin-top:10px">Up to 50 Participants</h3><p class="mute">Speakers + Adjudicators</p><div class="price">Free</div><ul><li>All features</li></ul></div>
 <div class="card hot"><span class="tag">Medium</span><h3 style="margin-top:10px">Up to 150 Participants</h3><p class="mute">Speakers + Adjudicators</p><div class="price">₹50 <small>/ day</small></div><ul><li>All features</li></ul></div>
-<div class="card"><span class="tag">Large</span><h3 style="margin-top:10px">Up to 300 Participants</h3><p class="mute">Speakers + Adjudicators</p><div class="price">₹150 <small>/ day</small></div><ul><li>All features</li></ul></div>
+<div class="card"><span class="tag">Large</span><h3 style="margin-top:10px">Up to 250 Participants</h3><p class="mute">Speakers + Adjudicators</p><div class="price">₹150 <small>/ day</small></div><ul><li>All features</li></ul></div>
 </div>
+<p class="mute" style="font-size:14px;margin:16px 0 0">For more than 250 participants, or for for-profit / break-even competitions, we recommend reaching out to <a href="https://calicotab.com/" target="_blank" rel="noopener">Calicotabs</a> or <a href="https://yellowtabs.com/" target="_blank" rel="noopener">YellowTabs</a>.</p>
 <div class="warn"><b>Giving back:</b> payments go towards server costs, and whatever remains after that is donated to the Tabbycat organisation, the team that builds and maintains the software.</div>
 
 </section>
@@ -124,7 +126,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-si
 </div>
 </section>
 
-<footer>Powered by <a href="https://github.com/TabbycatDebate/tabbycat">Tabbycat</a>, run independently and not officially affiliated. Made for the debating community.</footer>
+<footer>Powered by <a href="https://github.com/TabbycatDebate/tabbycat" target="_blank" rel="noopener">Tabbycat</a>, run independently and not officially affiliated. Made for the debating community.</footer>
 </div>
 <script>
 (function(){var u=['chiragbp','17'].join('.'),d=['gmail','com'].join('.'),a=document.createElement('a');
